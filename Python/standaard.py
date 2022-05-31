@@ -16,3 +16,8 @@ def filter_unique(arr):
         if elem not in result:
             result.append(elem)
     return result
+
+# python ingebouwde filter kan je ook gebruiken:
+filter_obj = filter(lambda x: x % 2 == 0, [1, 2, 3, 4, 5, 5, 6, 7, 8])
+for elem in filter_obj:
+    print(elem)
