@@ -16,17 +16,3 @@ def filter_unique(arr):
         if elem not in result:
             result.append(elem)
     return result
-
-def filter_predicate(arr, pred):
-    """
-    >>>filter_predicate([1, 2, 2, 3, 4, 5, 6, 7, 9, 8], lambda x: x % 2 == 0)
-    [2, 2, 4, 6, 8]
-    :param arr: de te filteren array
-    :param pred: een lambda dat een predicaat voorstelt
-    :return: de gefilterde array
-    """
-    result = []
-    for elem in arr:
-        if pred(elem):
-            result.append(elem)
-    return result
