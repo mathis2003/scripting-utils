@@ -37,6 +37,10 @@ def filter_unique(arr):
             result.append(elem)
     return result
 
+#veel simpelere en snellere versie van bovenstaande
+def filter_unique(arr):
+    return list(set(arr))
+
 # python ingebouwde filter kan je ook gebruiken:
 filter_obj = filter(lambda x: x % 2 == 0, [1, 2, 3, 4, 5, 5, 6, 7, 8])
 # merk op dat filter_obj GEEN array is of wat dan ook, maar er kan wel over gelooped worden

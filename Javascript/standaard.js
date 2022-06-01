@@ -1,9 +1,3 @@
-/*
- * This file contains some expansions to the standard JavaScript prototypes
- *
- * @author tyboro2002
- */
-
 // assert boilerplate code
 let assert = require("assert");
 let foutboodschap = "ongeldige richting";
