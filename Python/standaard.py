@@ -1,3 +1,9 @@
+# bestand openen
+with open(loc, 'r') as invoer:
+    for regel in invoer:
+        print(regel)
+
+
 def filter_unique(arr):
     """
     :param arr: de array die gefilterd moet worden zodat het enkel nog maar unieke elementen bevat
