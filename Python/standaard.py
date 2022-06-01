@@ -2,6 +2,10 @@
 with open(loc, 'r') as invoer:
     for regel in invoer:
         print(regel)
+        
+# reguliere expressies
+import re
+s = re.sub("te vervangen string", "vervanger", "source text")
 
 
 def filter_unique(arr):
