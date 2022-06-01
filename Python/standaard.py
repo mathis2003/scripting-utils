@@ -8,7 +8,7 @@ import re
 s = re.sub("te vervangen string", "vervanger", "source text")
 # merk op dat re.match wel in een if statement kan gebruikt worden, maar geen boolese waarde geeft.
 # Je kan dus niet "return re.match(...)" schrijven
-if re.match("[A-I#]", self.ch):
+if re.match("[A-Z]+", self.ch):
     return True
 else:
     return False
