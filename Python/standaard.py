@@ -7,6 +7,10 @@ with open(loc, 'r') as invoer:
 import re
 s = re.sub("te vervangen string", "vervanger", "source text")
 
+#slicing
+my_string[start:stop]
+my_string[start:stop:step]
+
 
 def filter_unique(arr):
     """
