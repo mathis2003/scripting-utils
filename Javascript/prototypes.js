@@ -81,6 +81,26 @@ Array.prototype.isEmpty = function () {
     return this.length === 0;
 }
 
+/**
+ * Schuif elk element een op naar rechts (links in reverse). 
+ * Het achterste wordt het eerste (eerste wordt laatste in reverse)
+ * @param reverse
+ * @returns {Array} geroteerde array
+ */
+Array.prototype.roteer = function (reverse) {
+    if (reverse) this.unshift(this.pop());
+    else this.push(this.shift());
+    return this;
+}
+
+/**
+ * transponeer een 2d array
+ * @returns {*}
+ */
+Array.prototype.transponeer = function () {
+    return this[0].map((_, colIndex) => this.map(row => row[colIndex]));
+}
+
 // ********** String.prototype **********
 
 /**
