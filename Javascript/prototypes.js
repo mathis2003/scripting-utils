@@ -14,7 +14,6 @@ Array.prototype.toSet = function () {
 }
 
 /**
- * @param compare Function that specifies what equality of these objects mean.
  * @returns {this is *[]} Whether an array contains no more than one entry of the same object.
  */
 Array.prototype.isSet = function () {
@@ -136,4 +135,20 @@ Number.prototype.mod = function (n) {
  */
 Object.prototype.getOrDefault = function (key, defaultValue) {
     return this[key] ?? defaultValue;
+}
+
+// ********** functions **********
+
+/**
+ * Throws an AssertionError when a condition is not met.
+ * @param condition A condition that should be met.
+ * @param message The message that should be displayed when the error is thrown.
+ */
+function assert(condition, message) {
+    if (! condition) {
+        throw {
+            name: "AssertionError",
+            message: message
+        }
+    }
 }
